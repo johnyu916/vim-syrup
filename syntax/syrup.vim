@@ -15,10 +15,10 @@ syn keyword syrupImport         import from
 syn keyword syrupType           object number array bool string
 syn keyword syrupBoolean        true false
 syn keyword syrupNull           null
-syn match syrupNumber '\d\+\.\d*'
-syn match syrupNumber '[-]\d\+\.\d*'
-syn match syrupNumber '\d\+'
-syn match syrupNumber '[-]\d\+'
+syn match syrupNumber '\<\d\+\.\d*\>'
+syn match syrupNumber '\<[-]\d\+\.\d*\>'
+syn match syrupNumber '\<\d\+\>'
+syn match syrupNumber '\<[-]\d\+\>'
 syn keyword syrupTodo contained TODO FIXME XXX NOTE
 syn match syrupComment "#.*$" contains=syrupTodo
 syn region syrupString start='"' end='"'
